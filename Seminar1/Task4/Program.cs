@@ -5,7 +5,8 @@
 Console.Write("Введите целое число: ");
 int numberN = int.Parse(Console.ReadLine());
 int minusN = (-numberN);
-for (int i = minusN; i <=numberN; i++)
+for (int i = minusN; i <numberN; i++)
 {
     Console.Write($"{i}, ");
 }
+Console.WriteLine(numberN);
