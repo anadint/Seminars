@@ -2,29 +2,11 @@
 
 string CoordinateRange(int quarter)
 {
-    string xRange = "";
-    string yRange = "";
-    if (quarter == 1)
-    {
-        xRange = "x > 0";
-        yRange = " y > 0";
-    }
-    if (quarter == 2)
-    {
-        xRange = "x < 0";
-        yRange = " y > 0";
-    }
-    if (quarter == 3)
-    {
-        xRange = "x < 0";
-        yRange = " y < 0";
-    } 
-    if (quarter == 4)
-    {
-        xRange = "x > 0";
-        yRange = " y < 0";
-    }
-    return xRange +  yRange;
+    if (quarter == 1) return "x > 0, y > 0";
+    if (quarter == 2) return "x < 0, y > 0";
+    if (quarter == 3) return "x < 0, y < 0";
+    if (quarter == 4) return "x > 0, y < 0";
+    return "";
     
 }
 
