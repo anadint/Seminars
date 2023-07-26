@@ -17,9 +17,7 @@ void DefSqr(int num)
 int GetInfo(string message)
 {
     Console.Write(message);
-    int inputNum = Convert.ToInt32(Console.ReadLine());
-    return inputNum;
-
+    return Convert.ToInt32(Console.ReadLine());
 }
 
 int num = GetInfo("Введите число: ");
