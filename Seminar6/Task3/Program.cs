@@ -5,7 +5,7 @@
 
 void DefRes(int num)
 {
-    string temp = "";
+    string temp = String.Empty;
     while (num > 0)
     {
         temp = (num % 2).ToString() + temp;
