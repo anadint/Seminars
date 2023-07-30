@@ -8,7 +8,6 @@ int[] Fibonacci(int num)
     int[] array = new int[num];
     array[0] = 0;
     array[1] = 1;
-    array[2] = 2;
     for (int i = 2; i < num; i++)
     {
         array[i] = array[i - 1] + array[i - 2];
@@ -25,4 +24,4 @@ int GetInfo(string text)
 
 int num = GetInfo("Введите число: ");
 int[] array = Fibonacci(num);
-Console.WriteLine("[" + string.Join(",", array) + "]");
+Console.WriteLine( "Если N = " + num + " -> [" + string.Join(",", array) + "]");
