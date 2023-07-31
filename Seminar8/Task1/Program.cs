@@ -10,8 +10,8 @@ void PrintReversedArray(int[,] array)
             if (i == 0)
             {
                 temp = array[i, j];
-                array[i, j] = array[1, j];
-                array[1, j] = temp;                
+                array[i, j] = array[array.GetLength(0) - 1 - i, j];
+                array[array.GetLength(0) - 1 - i, j] = temp;                
             }
             Console.Write($"{array[i,j]} ");
         }
